@@ -11,11 +11,11 @@
 
 ### 1 - Hooray! You just wrote your first AVR C code! Take a screenshot of your code. It should only be a few lines. No need to include the “include <avr/io.h>” or header file lines. Just the main function.  (Refer to the examples in lecture.)
 
-Lorem ipsum
+![alt text](image.png)
 
 ### 2 - Take a screenshot of your code. It should only be a few lines. No need to include the “include <avr/ioh.h>” lines. Just the main function.  (Refer to the examples in lecture.)
 
-Lorem ipsum
+![alt text](image-1.png)
 
 ### 3 - Take a screenshot of your code. It should only be a few lines. No need to include the “include <avr/ioh.h>” lines. Just the main function.  (Refer to the examples in lecture.)
 
