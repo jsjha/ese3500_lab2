@@ -23,7 +23,10 @@ void Initialize()
 	DDRB |= (1 << DDB5);
 	
 	// Set clock source for Timer 1 with prescaler of 8
-	TCCR1B |= (1 << CS11);
+	TCCR1B |= (1 << CS11) | (1 << CS10);
+	
+	// Timer Overflow Interrupts
+	
 	
 	// Configure Timer 1 for input capture mode with rising and falling edge detection
 	TCCR1B |= (1 << ICES1);    // Set to capture rising edge first
@@ -41,18 +44,17 @@ ISR(TIMER1_CAPT_vect)
 	TIFR1 |= (1 << ICF1);
 	
 	// Read the state of PB0 to determine button press status
-	if ((PINB & (1 << PINB0))) // Button released
+	if (!(PINB & (1 << PINB0))) // Button released
 	{
 		// Turn off the LED connected to PB1
 		PORTB &= ~(1 << PORTB5);
-		TCCR1B &= ~(1 << ICES1);    // Set to capture falling edge first
+		TCCR1B |= (1 << ICES1);    // Set to capture rising edge first
 	}
 	else // Button pressed
 	{
 		// Turn on the LED connected to PB1
 		PORTB |= (1 << PORTB5);
-		TCCR1B |= (1 << ICES1);    // Set to capture rising edge first
-		
+		TCCR1B &= ~(1 << ICES1);    // Set to capture falling edge first	
 	}
 }
 
