@@ -19,7 +19,7 @@
 
 ### 3 - Take a screenshot of your code. It should only be a few lines. No need to include the “include <avr/ioh.h>” lines. Just the main function.  (Refer to the examples in lecture.)
 
-Lorem ipsum
+![Alt text](image-7.png)
 
 ### 4 - Use CircuitLab to draw your schematic. Attach an image to your answer to this question
 
@@ -77,6 +77,10 @@ A prescaler lowers the frequency at which you timer overflows, therefore allowin
 The 1nF is more desirable for debouncing because it charges faster (it has a smaller RC time constant). This means it looks more similar to rising edge for a smaller time step.
 
 ### CODE: Write a program that takes in a message or word, translates it to morse code, and then flashes an LED according to the morse code generated. Since we haven’t learned about serial communication yet, the message/word can be a hardcoded string in your code that you manually edit, compile, and flash each time you want to change the word. Submit a video of this demo
+
+See link: https://drive.google.com/drive/folders/1XuSoSMkW0sNAIFN7wOecJ4mm8Fk_-J_5?usp=sharing
+
+Code in partf.c
 
 
 ## Github Repo Submission Resources
