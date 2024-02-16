@@ -1,9 +1,9 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/8Ega_H0A)
 # lab2_morse_skeleton
 
-    * Name: 
+    * Name: Jessi Jha
     * Github Repository URL: 
-    * Description of hardware: (embedded hardware, laptop, etc) 
+    * Description of hardware: Resistors, Capacitors, Switch, ATmega328PB, LEDs 
 
 ## Part A: Warming Up with LEDs
 
@@ -23,35 +23,61 @@ Lorem ipsum
 
 ### 4 - Use CircuitLab to draw your schematic. Attach an image to your answer to this question
 
-Lorem ipsum
+![Alt text](image-6.png)
 
 ## Part B: Now, Using Interrupts
 
 ### 5 - Give an advantage and a disadvantage to using interrupts over polling for this task
 
-Lorem ipsum
+Advantages:
+- Interrupts are useful for infrequent events
+- Fast MCU response
+
+Disadvantages:
+- Interrupts not intended for time critical responses
 
 ## Part C: Dash or Dot
 
 ### 6 - For a 16MHz clock, how many “ticks” are in 30ms, 200ms, and 400ms?
 
-Lorem ipsum
+30ms: 480000
+
+200ms: 3200000
+
+400ms: 6400000
 
 ### 7 - Describe how a prescaler allows us to work with a wider range of frequencies on our microcontroller
 
-Lorem ipsum
+A prescaler lowers the frequency at which you timer overflows, therefore allowing you to work with smaller frequencies. 
 
 ## Part D: Putting It Together - LEDs and ASCII
 
-### 8 - Submit a link to a demo video
+### 8 - Recall what you have learned before about RC circuits. Use just a resistor and a capacitor, create two separate circuits that function as a high pass filter and a low pass filter. Draw sketches of each of these circuits (or build them in Circuit Lab) and submit them.
 
-Lorem ipsum
+![Alt text](image-2.png)
+
 
 ## Part E: The (Dot) Dash to the Finish
 
-### 9 - Write a program that takes in a message or word, translates it to morse code, and then flashes an LED according to the morse code generated. Since we haven’t learned about serial communication yet, the message/word can be a hardcoded string in your code that you manually edit, compile, and flash each time you want to change the word. Submit a video of this demo
+### 9 - Submit a photo of your circuit setup. 
 
-Lorem ipsum
+![Alt text](image-3.png)
+
+### 10 - Submit a photo/screenshot of your oscilloscope reading.
+![Alt text](image-4.png)
+![Alt text](image-5.png)
+
+
+### 11 - Repeat the previous question by changing the capacitance for C1 to 10nF. Submit a photo of your result.  
+
+![Alt text](image-5.png)
+
+### 12 - Which capacitance is more desirable for hardware debouncing? Why? Hint: try zooming in to see the voltage behavior when the button is just pressed.
+
+The 1nF is more desirable for debouncing because it charges faster (it has a smaller RC time constant). This means it looks more similar to rising edge for a smaller time step.
+
+### CODE: Write a program that takes in a message or word, translates it to morse code, and then flashes an LED according to the morse code generated. Since we haven’t learned about serial communication yet, the message/word can be a hardcoded string in your code that you manually edit, compile, and flash each time you want to change the word. Submit a video of this demo
+
 
 ## Github Repo Submission Resources
 
